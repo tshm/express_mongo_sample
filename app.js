@@ -1,5 +1,6 @@
 var express = require('express'),
   config = require('./config/config'),
+  fs = require('fs'),
   mongoose = require('mongoose');
 
 mongoose.connect(config.db);

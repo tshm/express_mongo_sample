@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 depts
+  form(action="/depts", method="post")
+    ul
+      each item in items
+        li
+          label
+            input.form-control(type="text", value="#{ item.name }", name="#{item.id}")
+          button.del.btn.btn-danger(type="button")
+            span.glyphicon.glyphicon-remove-sign
+            span del
+    button#new.btn.btn-primary(type="button")
+      span.glyphicon.glyphicon-plus-sign
+      span new
+    input.btn.btn-warning(type="submit", value="save")
+    a#cancel.btn.btn-success(href="/")
+      span.glyphicon.glyphicon-home
+      span cancel
+  script(src="/js/deptsform.js")

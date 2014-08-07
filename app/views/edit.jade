@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1 edit #{ id }
+  .row
+    .form-group.col-xs-4
+      form(action="/edit/#{id}", method="post")
+        label(for="name") name:
+        input#name.form-control(type="text", name="name", value="#{item.name}")
+        label(for="dob") dob:
+        input#dob.form-control(type="date", name="dob", value="#{item.dobfmt}")
+        label(for="gendar") gendar:
+        select#gendar.form-control(name="gendar", value="#{item.gendar}")
+          option(label="male", value="male")
+          option(label="female", value="female")
+        label(for="dept") dept:
+        select#dept.form-control(name="dept", value="#{item.dept}")
+          each dept in depts
+            option(label="#{ dept.name }", value="#{ dept.name }")
+        hr
+        button.btn.btn-warning(type="submit") save
+  form.form(action="/del/#{id}", method="post")
+    button.btn.btn-danger(type="submit")
+      span.glyphicon.glyphicon-trash
+      span delete
+    a.btn.btn-primary(href="/")
+      span.glyphicon.glyphicon-home
+      span cancel

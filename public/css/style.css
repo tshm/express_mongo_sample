@@ -1,0 +1,14 @@
+label {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+li:before {
+  content: '>> ';
+}
+.glyphicon:after {
+  margin-right: 0.5em;
+  content: '';
+}

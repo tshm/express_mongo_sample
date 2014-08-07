@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 list
+  div.row
+    table.table.table-striped
+      thead
+        tr
+          th name
+          th dept
+          th gendar
+          th dob
+          th 
+      tbody
+        each item in meibo
+          tr
+            td= item.name
+            td= item.dept
+            td= item.gendar
+            td= item.dob
+            td
+              a.btn.btn-primary(href="/edit/#{item.id}")
+                span.glyphicon.glyphicon-pencil
+                span edit
+    a.btn.btn-primary(href="/edit/") new
+    a.btn.btn-success(href="/depts/") edit deps
