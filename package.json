@@ -14,7 +14,7 @@
     "compression": "~1.7.0",
     "method-override": "~2.1.1",
     "mongoose": "~3.8.12",
-    "jade": "~1.11.0"
+    "pug": "~2.0.0"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
