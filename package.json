@@ -20,7 +20,7 @@
     "grunt": "~1.5.3",
     "grunt-develop": "~0.4.0",
     "grunt-contrib-watch": "~1.1.0",
-    "grunt-contrib-compass": "~0.9.0",
+    "grunt-contrib-compass": "~1.1.0",
     "request": "~2.68.0",
     "time-grunt": "~2.0.0",
     "load-grunt-tasks": "~5.1.0"
