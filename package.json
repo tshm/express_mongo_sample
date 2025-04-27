@@ -17,7 +17,7 @@
     "pug": "~3.0.0"
   },
   "devDependencies": {
-    "grunt": "~1.5.3",
+    "grunt": "~1.6.0",
     "grunt-develop": "~0.4.0",
     "grunt-contrib-watch": "~1.1.0",
     "grunt-contrib-compass": "~1.1.0",
